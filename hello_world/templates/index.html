@@ -1,26 +1,17 @@
 {% load django_browser_reload %}
 {% load static %}
 
-<!doctype html>
-<html lang="en">
+<table>
+    <tr>
+        <th>Número de Expediente</th>
+        <!-- Más encabezados de columna aquí -->
+        
 
-<head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{% static 'main.css' %}">
-</head>
-
-<body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
-            </p>
-            <p class="small">
-                Edit <code>hello_world/templates/index.html</code> and see changes live!
-            </p>
-        </header>
-    </div>
-</body>
-
-</html>
+    </tr>
+    {% for accidente in accidentes %}
+    <tr>
+        <td>{{ accidente.num_expediente }}</td>
+        <!-- Más datos de accidente aquí -->
+    </tr>
+    {% endfor %}
+</table>

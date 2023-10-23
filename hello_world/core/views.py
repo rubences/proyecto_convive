@@ -1,7 +1,8 @@
 from django.shortcuts import render
+from .models import RegistroAccidente
 
-def index(request):
-    context = {
-        "title": "Django example",
-    }
-    return render(request, "index.html", context)
+
+def lista_accidentes(request):
+    accidentes = RegistroAccidente.objects.all()
+    return render(request, 'hello_world/index.html', {'accidentes': accidentes})
+

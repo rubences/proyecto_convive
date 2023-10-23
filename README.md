@@ -1,13 +1,12 @@
 # GitHub Codespaces ♥️ Django
 
-Welcome to your shiny new Codespace running Django! We've got everything fired up and running for you to explore Django.
-
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
-
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
-
 To run this application:
 
 ```python
 python manage.py runserver
 ```
+
+Backend: Preparación de los datos en Django
+Modelo: Asegúrate de que tu modelo Django refleje la estructura del CSV "2023_Accidentalidad.csv".
+Carga de datos: Utiliza un script de Python o un comando personalizado de Django para cargar los datos del CSV en tu base de datos.
+Vista: En tu archivo views.py, necesitarás preparar los datos que quieres visualizar. Esto generalmente implica recuperar datos de tu modelo y organizarlos en un formato que puedas usar fácilmente en tu gráfico.
